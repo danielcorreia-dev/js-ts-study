@@ -1,0 +1,4 @@
+const firstObject = {
+    name: "Person"
+    
+}
