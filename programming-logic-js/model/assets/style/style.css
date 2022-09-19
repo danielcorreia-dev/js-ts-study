@@ -1,19 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #5f9eaf
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #04000c;
-    font-family: sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--primary-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
+  background-color: aliceblue;
+  width: 640px;
+  margin: 20px auto;
+  border-radius: 15px;
+  padding: 16px 24px;
+  line-height: 1.3;
+  font-size: 1.2em;
+}
 
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+form {
+  padding: 8px 0;
+}
+
+form label, form input, form button {
+  display: block;
+  width: 100%;
+}
+
+form input {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 4px 12px;
+  height: 35px;
+  transition: all .1s ease;
+}
+
+form input:nth-child(8){
+  margin-bottom: 28px;
+}
+
+form input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+form button {
+  font-weight: bold;
+  width: 100px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  transition: .2s ease background-color, .2s ease color;
+}
+
+form button:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
