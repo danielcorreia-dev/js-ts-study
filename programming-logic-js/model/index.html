@@ -9,12 +9,37 @@
   </head>
   <body>
     <section class="container">
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas
-        vero cumque voluptates, distinctio iusto ab iure officiis iste quia,
-        laborum adipisci at hic, placeat a perspiciatis! Magnam, fuga culpa!
-      </p>
+      <h1>IMC Measurement</h1>
+      <div class="list-container">
+        <ul class="weight">
+          <h3>Weight</h3>
+          <li>Less than 18,5</li>
+          <li>Between 18,5 and 24,9</li>
+          <li>Between 25 and 29,9</li>
+          <li>Between 30 and 34,9</li>
+          <li>Between 35 and 39,9</li>
+          <li>Above 40</li>
+        </ul>
+        <ul class="result-weight">
+          <h3>Result</h3>
+          <li>Below weight</li>
+          <li>Normal weight</li>
+          <li>Overweight</li>
+          <li>Obesity level I</li>
+          <li>Obesity level II</li>
+          <li>Obesity level III</li>
+        </ul>
+      </div>
+      <form action="/" method="post">
+        <label for="height">Height</label>
+        <input type="text" id="height">
+
+        <label for="weight">Weight</label>
+        <input type="text" id="weight">
+        <button class="cta" type="submit">Calculate</button>
+      </form>
+      <div class="result">
+      </div>
     </section>
     <script src="./assets/js/main.js"></script>
   </body>

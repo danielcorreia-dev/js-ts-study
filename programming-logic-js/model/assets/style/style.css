@@ -57,18 +57,14 @@ form input {
   transition: all .1s ease;
 }
 
-form input:nth-child(8){
-  margin-bottom: 28px;
-}
-
 form input:focus {
   border: 2px solid var(--primary-color);
 }
 
 form button {
   font-weight: bold;
-  width: 100px;
-  margin: 0 auto;
+  display: inline-block;
+  margin-top: 12px;
   padding: 8px 12px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -82,4 +78,33 @@ form button {
 form button:hover {
   background-color: var(--primary-color);
   color: white;
+}
+
+.result {
+  color: white;
+  font-weight: 600;
+}
+
+.on{
+  margin-top: 16px;
+  padding: 8px 12px;
+  background-color: rgb(171, 100, 237);
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+  width: 100%;
+}
+
+.list-container ul {
+  padding: 0 20px;
+  margin: 0 30px;
+  list-style: none;
+}
+
+ul {
+  line-height: 1.8;
 }
