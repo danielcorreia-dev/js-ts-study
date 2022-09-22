@@ -1,12 +1,34 @@
-const form = document.querySelector('form')
-const heightForm = document.querySelector('#height')
-const weightForm = document.querySelector('#weight')
+const form = document.querySelector("form");
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    console.log("Prevented Event")
-})
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-function setResult(msg) {
-    
+  const heightInput = e.target.querySelector("#height");
+  const weightInput = e.target.querySelector("#weight");
+
+  const height = Number(heightInput.value);
+  const weight = Number(weightInput.value);
+
+  if (!height){
+    setResult('Invalid number', false);
+    return;
+  }
+
+  if (!weight){
+    setResult('Invalid number', false);
+    return;
+  }
+
+});
+
+function setResult(msg, isValid) {
+  const resultado = document.querySelector(".result");
+  resultado.innerHTML = "";
+
+  const p = createParagraph();
+}
+
+function createParagraph() {
+  const p = document.createElement("p");
+ // p.classList.add(className);
 }

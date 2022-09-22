@@ -81,8 +81,12 @@ form button:hover {
 }
 
 .result {
-  color: white;
+  /* color: white; */
   font-weight: 600;
+}
+
+.teste {
+  background-color: red;
 }
 
 .on{
