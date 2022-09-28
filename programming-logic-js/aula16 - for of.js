@@ -38,7 +38,7 @@ const person = {
   age: 19,
 };
 
-for (let attributes in person) { 
+for (let attributes in person) {
   // It will get the keys of the object
   console.log(attributes, person[attributes]);
 }
@@ -48,9 +48,9 @@ for (let attributes in person) {
 // }
 
 /** Resume of for uses
- * 
+ *
  * Classical For - Usually with iterables (array, strings);
  * For In - Return the index or key (string, arrays and objects);
  * For of - Return the value itself (iterables, arrays and strings);
- * 
+ *
  */
