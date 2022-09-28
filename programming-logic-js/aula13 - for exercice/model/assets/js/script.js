@@ -8,13 +8,14 @@ const elements = [
 ];
 
 function addElement() {
-  
-  for(i = 0; i < elements.length; i++) {
+  for (i = 0; i < elements.length; i++) {
     let { tag, texto } = elements[i];
-    
-    let tagElem = document.createElement(tag)
-    tagElem.innerHTML = texto
-    boxContainer.appendChild(tagElem)
+
+    let tagElem = document.createElement(tag);
+    // tagElem.innerHTML = texto
+    let createdText = document.createTextNode(texto);
+    tagElem.appendChild(createdText);
+    boxContainer.appendChild(tagElem);
   }
 }
 
