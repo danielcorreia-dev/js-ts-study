@@ -1,21 +1,21 @@
-const form = document.querySelector("form");
+const form = document.querySelector('form');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const heightInput = e.target.querySelector("#height");
-  const weightInput = e.target.querySelector("#weight");
+  const heightInput = e.target.querySelector('#height');
+  const weightInput = e.target.querySelector('#weight');
 
   const height = Number(heightInput.value);
   const weight = Number(weightInput.value);
 
   if (!height) {
-    setResult("Invalid number", false);
+    setResult('Invalid number', false);
     return;
   }
 
   if (!weight) {
-    setResult("Invalid number", false);
+    setResult('Invalid number', false);
     return;
   }
 
@@ -29,12 +29,12 @@ form.addEventListener("submit", (e) => {
 
 function getLevelImc(imc) {
   const level = [
-    "Below weight",
-    "Normal weight",
-    "Overweight",
-    "Obesity level I",
-    "Obesity level II",
-    "Obesity level III",
+    'Below weight',
+    'Normal weight',
+    'Overweight',
+    'Obesity level I',
+    'Obesity level II',
+    'Obesity level III',
   ];
 
   if (imc >= 39.9) return level[5];
@@ -46,20 +46,20 @@ function getLevelImc(imc) {
 }
 
 function setResult(msg, isValid) {
-  const resultado = document.querySelector(".result");
-  resultado.innerHTML = "";
+  const resultado = document.querySelector('.result');
+  resultado.innerHTML = '';
 
   const p = createParagraph();
 
-  if (isValid) p.classList.add("on");
-  else p.classList.add("off");
+  if (isValid) p.classList.add('on');
+  else p.classList.add('off');
 
   resultado.appendChild(p);
   p.innerHTML = msg;
 }
 
 function createParagraph() {
-  const p = document.createElement("p");
+  const p = document.createElement('p');
   return p;
 }
 
