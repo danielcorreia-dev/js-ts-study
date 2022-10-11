@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 :root {
@@ -83,4 +84,28 @@ main {
   border: var(--light-blue) 2px solid;
   border-radius: 4px;
   margin-bottom: 4px;
+}
+
+.tasks {
+  margin-top: 10px;
+}
+
+.tasks li {
+  align-items: center;
+  border-bottom: 1px solid var(--dark-blue);
+  margin-bottom: 8px;
+}
+
+.delete {
+  padding: 2px 3px;
+  font-family: 'Poppins';
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color ease 300ms;
+}
+
+.delete:hover {
+  color: red;
+  cursor: pointer;
 }
