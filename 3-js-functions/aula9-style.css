@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #171717;
+  color: white;
+}
+
+.box-container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: baseline; */
+  background-color: white;
+  padding: 20px 16px;
+  border-radius: 6px;
+  box-shadow: black 0px 0px 10px;
+  color: #121212;
+}
+
+
+.box-container h1 {
+  margin-bottom: 0.3em;
+}
+
+.input-num {
+  width: 100%;
+  font-size: 2em;
+  border: 2px solid #000000;
+  padding: 4px 4px;
+  text-align: right;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  font-size: 1.4em;
+  padding: 8px 4px;
+  font-weight: 600;
+  background-color: #c4c4c4;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6b6b6b;
+}
+
+.btn-eq {
+  color: white;
+  background-color:#171717 ;
+}
+
+.btn-eq:hover {
+  background-color:#101010;
+  color: rgb(236, 255, 173);
+}
+
+.calculator {
+  max-width: 400px;
+}
