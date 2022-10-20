@@ -7,6 +7,7 @@ function createPerson(name, lastName, p, cm) {
     get completeName() {
       return `${this.name} ${this.lastName}`
     },
+    
     set completeName(fullName) {
       fullName = fullName.split(' ');
       this.name = fullName.shift();
