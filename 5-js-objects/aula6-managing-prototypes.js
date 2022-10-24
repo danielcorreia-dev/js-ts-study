@@ -75,7 +75,7 @@ const p2 = {
   value: 10
 }
 
-// To reuse the methods created in Product.prototype you can utilize the same function to attribute a prototype to it.
+// To reuse the methods created in Product.prototype you can utilize the same function to attribute a non-related object prototype to it.
 Object.setPrototypeOf(p2, Product.prototype);
 
 p2.discount(40);
@@ -84,3 +84,29 @@ p2.raise(30);
 console.log(p2.value);
 
 console.log(p2.__proto__ === Product.prototype);
+
+// Also, you can directly set a object prototype
+const p3 = Object.create(Product.prototype);
+// But remember to set the keys to match the proto.
+p3.value = 100;
+p3.raise(10);
+console.log(p3.value);
+
+// And set the keys + options
+const p4 = Object.create(Product.prototype, {
+  value: {
+    value: 45,
+    writable: true,
+    enumerable: true,
+    configurable: false
+  },
+  name: {
+    value: 'Wallet',
+    enumerable: true,
+    configurable: true
+  }
+})
+
+console.log(p4);
+p4.discount(10);
+console.log(p4.value);
