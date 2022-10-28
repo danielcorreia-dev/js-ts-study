@@ -70,10 +70,10 @@ console.log(p1.value);
 p1.raise(10);
 console.log(p1.value);
 
-const p2 = { 
+const p2 = {
   name: 'Pen',
-  value: 10
-}
+  value: 10,
+};
 
 // To reuse the methods created in Product.prototype you can utilize the same function to attribute a non-related object prototype to it.
 Object.setPrototypeOf(p2, Product.prototype);
@@ -98,14 +98,14 @@ const p4 = Object.create(Product.prototype, {
     value: 45,
     writable: true,
     enumerable: true,
-    configurable: false
+    configurable: false,
   },
   name: {
     value: 'Wallet',
     enumerable: true,
-    configurable: true
-  }
-})
+    configurable: true,
+  },
+});
 
 console.log(p4);
 p4.discount(10);
