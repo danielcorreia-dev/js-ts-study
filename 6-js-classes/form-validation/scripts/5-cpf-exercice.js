@@ -1,6 +1,5 @@
 // 705.484.450-52 070.987.720-03
-const cpf = '705.484.450-52';
-class validateCPF {
+class ValidateCPF {
   constructor(cpf) {
     Object.defineProperty(this, 'cleanCPF', {
       get: function () {
@@ -46,5 +45,3 @@ class validateCPF {
   }
 }
 
-const cpf1 = new validateCPF();
-console.log(cpf1.validate());
