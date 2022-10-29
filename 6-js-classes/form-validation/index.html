@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Form Page</title>
+  </head>
+  <body>
+    <main>
+      <form action="/" method="post" class="form-data">
+        <div class="form-container">
+          <h1>Register</h1>
+
+          <!-- Name -->
+          <div class="user-form">
+            <div class="label-container">
+              <span class="material-symbols-outlined" id="name-icon">
+                edit
+              </span>
+              <label for="user">Name:</label>
+            </div>
+            <div>
+              <input type="text" id="user" class="input-form name"/>
+            </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="user-form">
+            <div class="label-container">
+              <span class="material-symbols-outlined" id="lastname-icon">
+                draw
+              </span>
+              <label for="user">Last Name:</label>
+            </div>
+            <div>
+              <input type="text" id="user" class="input-form lastname" />
+            </div>
+          </div>
+
+          <!-- CPF -->
+          <div class="user-form">
+            <div class="label-container">
+              <span class="material-symbols-outlined" id="cpf-icon">
+                dialpad
+              </span>
+              <label for="user">CPF:</label>
+            </div>
+            <div>
+              <input type="text" id="user" class="input-form cpf" />
+            </div>
+          </div>
+
+          <!-- Username -->
+          <div class="user-form">
+            <div class="label-container">
+              <span class="material-symbols-outlined" id="user-icon">
+                person
+              </span>
+              <label for="user">User:</label>
+            </div>
+            <div>
+              <input type="text" id="user" class="input-form user" />
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="user-form">
+            <div class="label-container">
+              <span class="material-symbols-outlined" id="pass-icon">
+                password
+              </span>
+              <label for="user">Password:</label>
+            </div>
+            <div class="pass-container">
+              <input type="password" id="password" class="input-form pass" />
+            </div>
+            <input type="checkbox" name="show-pass" id="show-pass">
+            <span>Show password</span>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="user-form">
+            <div class="label-container">
+              <span class="material-symbols-outlined" id="confirmPass">
+                lock
+              </span>
+              <label for="user">Confirm Password:</label>
+            </div>
+            <div>
+              <input type="password" id="user" class="input-form passconf" />
+            </div>
+          </div>
+
+          <button type="submit" class="cta"> Send </button>
+        </div>
+      </form>
+    </main>
+    <script src="./scripts/script-style.js"></script>
+    <script type ="module" src="./scripts/validation.js"></script>
+  </body>
+</html>
