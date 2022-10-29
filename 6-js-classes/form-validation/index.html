@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="icon" href="./assets/iconPage.png" />
     <title>Form Page</title>
   </head>
   <body>
@@ -23,10 +24,10 @@
               <span class="material-symbols-outlined" id="name-icon">
                 edit
               </span>
-              <label for="user">Name:</label>
+              <label for="name">Name:</label>
             </div>
             <div>
-              <input type="text" id="user" class="input-form name"/>
+              <input type="text" id="name" class="input-form name validate" />
             </div>
           </div>
 
@@ -36,10 +37,14 @@
               <span class="material-symbols-outlined" id="lastname-icon">
                 draw
               </span>
-              <label for="user">Last Name:</label>
+              <label for="lastname">Last Name:</label>
             </div>
             <div>
-              <input type="text" id="user" class="input-form lastname" />
+              <input
+                type="text"
+                id="lastname"
+                class="input-form lastname validate"
+              />
             </div>
           </div>
 
@@ -49,10 +54,10 @@
               <span class="material-symbols-outlined" id="cpf-icon">
                 dialpad
               </span>
-              <label for="user">CPF:</label>
+              <label for="cpf">CPF:</label>
             </div>
             <div>
-              <input type="text" id="user" class="input-form cpf" />
+              <input type="text" id="cpf" class="input-form cpf validate" />
             </div>
           </div>
 
@@ -65,7 +70,7 @@
               <label for="user">User:</label>
             </div>
             <div>
-              <input type="text" id="user" class="input-form user" />
+              <input type="text" id="user" class="input-form user validate" />
             </div>
           </div>
 
@@ -75,13 +80,21 @@
               <span class="material-symbols-outlined" id="pass-icon">
                 password
               </span>
-              <label for="user">Password:</label>
+              <label for="password">Password:</label>
             </div>
             <div class="pass-container">
-              <input type="password" id="password" class="input-form pass" />
+              <input
+                type="password"
+                id="password"
+                class="input-form pass validate"
+              />
             </div>
-            <input type="checkbox" name="show-pass" id="show-pass">
-            <span>Show password</span>
+            <div class="password-container-selectable">
+              <input type="checkbox" name="show-pass" id="show-pass" />
+              <label for="show-pass" class="label-checkbox-password">
+                Show password</label
+              >
+            </div>
           </div>
 
           <!-- Confirm Password -->
@@ -90,18 +103,23 @@
               <span class="material-symbols-outlined" id="confirmPass">
                 lock
               </span>
-              <label for="user">Confirm Password:</label>
+              <label for="confirm-password">Confirm Password:</label>
             </div>
             <div>
-              <input type="password" id="user" class="input-form passconf" />
+              <input
+                type="password"
+                id="confirm-password"
+                class="input-form passconf validate"
+              />
             </div>
           </div>
 
-          <button type="submit" class="cta"> Send </button>
+          <!-- Button -->
+          <button type="submit" class="cta">Send</button>
         </div>
       </form>
     </main>
     <script src="./scripts/script-style.js"></script>
-    <script type ="module" src="./scripts/validation.js"></script>
+    <script src="./scripts/validation.js"></script>
   </body>
 </html>

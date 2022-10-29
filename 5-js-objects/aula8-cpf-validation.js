@@ -12,7 +12,7 @@
  * 11 - 284 % 11 = 5 (First Digit)
  */
 
-const cpf = '705.484.450-52';
+const cpf = '120.009.614-28';
 
 function ValidateCPF(cpfSend) {
   Object.defineProperty(this, 'cleanCPF', {
