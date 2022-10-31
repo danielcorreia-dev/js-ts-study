@@ -44,4 +44,3 @@ class ValidateCPF {
     return digit >= 9 ? '0' : String(digit);
   }
 }
-

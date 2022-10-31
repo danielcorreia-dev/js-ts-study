@@ -54,4 +54,4 @@ p1 = createPerson('daniel', 'correia');
 p2 = createPerson2('daniel', 'correia');
 
 console.log(p1.speak());
-console.log(p2.speak())
+console.log(p2.speak());

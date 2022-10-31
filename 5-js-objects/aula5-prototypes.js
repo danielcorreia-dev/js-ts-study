@@ -15,6 +15,7 @@ function Person(name, lastName, age) {
   this.lastName = lastName;
   this.age = age;
 }
+
 Person.prototype.fullname = function() { return `${this.name} ${this.lastName}` }
 
 // instance of an object || instance

@@ -13,6 +13,12 @@ class ValidateForm {
   handleSubmit(e) {
     e.preventDefault();
     const validField = this.isValid();
+    const validPasswords = this.passwordAuthentication();
+
+    if (validField && validPasswords) {
+      alert('Form sent');
+      this.form.submit();
+    }
   }
 
   isValid() {
@@ -25,14 +31,21 @@ class ValidateForm {
     for (let field of this.form.querySelectorAll('.validate')) {
       const label = field.labels;
 
-      if (!field.value)
+      if (!field.value) {
         this.createError(field, `${label[0].innerText} cannot be empty`);
-      valid = false;
+        valid = false;
+      }
 
       if (field.classList.contains('cpf')) {
         if (!this.validCPF(field)) valid = false;
       }
+
+      if (field.classList.contains('user')) {
+        if (!this.validUser(field)) valid = false;
+      }
     }
+
+    return valid;
   }
 
   validCPF(field) {
@@ -44,6 +57,44 @@ class ValidateForm {
     }
 
     return true;
+  }
+
+  validUser(field) {
+    const user = field.value;
+    let valid = true;
+
+    if (user.length < 3 || user.length > 12) {
+      this.createError(field, 'User needs to be between 3 and 12 characters');
+      valid = false;
+    }
+
+    if (!user.match(/^[a-zA-Z0-9]+$/g)) {
+      this.createError(field, 'Username needs to have only with letters');
+      valid = false;
+    }
+    return valid;
+  }
+
+  passwordAuthentication() {
+    let valid = true;
+
+    const password1 = this.form.querySelector('.pass');
+    const password2 = this.form.querySelector('.passconf');
+
+    if (password1.value !== password2.value) {
+      valid = false;
+      this.createError(password1, 'The passwords are different');
+      this.createError(password2, 'The passwords are different');
+    }
+
+    if (password1.value.length > 12 || password1.value.length < 6) {
+      valid = false;
+      this.createError(
+        password1,
+        'The password needs to be between 3 and 12 characters'
+      );
+    }
+    return valid;
   }
 
   createError(field, msg) {
