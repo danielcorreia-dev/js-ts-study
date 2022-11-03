@@ -11,7 +11,7 @@ const people = [
 //   newPersons[id] = {...person}
 // }
 
-const newPersons = new Map;
+const newPersons = new Map();
 for (const person of people) {
   const { id } = person;
 

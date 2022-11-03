@@ -1,0 +1,73 @@
+:root {
+  --cyan: #26BFEF;
+
+  --light-blue: #6990F4;
+
+  --gray-light: #787878;
+  --gray-100: #1C1C1C;
+  --gray-200: #1A1A1A;
+  --gray-300: #1A1A1A;
+  --gray-500: #0F0F0F;
+  --gray-600: #0B0B0B;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  background-color: var(--gray-200);
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/bg-beast.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: var(--gray-500);
+  width: 712px;
+  height: 873px;
+  border-radius: 12px;
+  padding: 56px 54px;
+}
+
+.form-title h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.form-title p {
+  font-size: 16px;
+}
+
+.highlight-p {
+  color: var(--cyan);
+}
+
+.label-form {
+
+}
+
+.input-form {
+  background-color: var(--gray-100);
+  border-color: var(--gray-300);
+
+}
+
+.input-inside-name {
+  color: #0B0B0B;
+  position: absolute;
+  z-index: 1;
+}
+

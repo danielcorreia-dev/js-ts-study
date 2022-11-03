@@ -20,10 +20,11 @@ const stringName = persons.map((obj) => obj.name);
 console.log(stringName);
 const rmKeyName = persons.map((obj) => delete obj.age);
 console.log(rmKeyName);
-const addID = persons.map((obj) => obj.id = Math.floor(Math.random() * (100 - 1) + 1));
-console.log(addID); 
+const addID = persons.map(
+  (obj) => (obj.id = Math.floor(Math.random() * (100 - 1) + 1))
+);
+console.log(addID);
 
 console.log('\n');
 
 console.log(persons);
-
