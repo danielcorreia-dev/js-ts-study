@@ -1,14 +1,14 @@
 :root {
-  --cyan: #26BFEF;
+  --cyan: #26bfef;
 
-  --light-blue: #6990F4;
+  --light-blue: #6990f4;
 
   --gray-light: #787878;
-  --gray-100: #1C1C1C;
-  --gray-200: #1A1A1A;
-  --gray-300: #1A1A1A;
-  --gray-500: #0F0F0F;
-  --gray-600: #0B0B0B;
+  --gray-100: #1c1c1c;
+  --gray-200: #1a1a1a;
+  --gray-300: #1a1a1a;
+  --gray-500: #0f0f0f;
+  --gray-600: #0b0b0b;
 }
 
 * {
@@ -59,7 +59,7 @@ main {
 .highlight-p :is(a) {
   color: var(--cyan);
   text-decoration: none;
-  transition: color .1s ease-in;
+  transition: color 0.1s ease-in;
 }
 
 .highlight-p :is(a:hover) {
@@ -78,7 +78,7 @@ main {
 .input-form {
   font-size: 18px;
   font-weight: 500;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   color: white;
   background-color: var(--gray-100);
   border-color: var(--gray-300);
@@ -86,6 +86,7 @@ main {
   height: 72px;
   border-radius: 8px;
   caret-color: #787878;
+  font-family: 'Inter', sans-serif;
 }
 
 .input-form:focus {
@@ -93,10 +94,10 @@ main {
 }
 
 .input-inside-name {
-  color: #0B0B0B;
+  color: #0b0b0b;
   position: absolute;
   z-index: 1;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .form-button {
@@ -109,13 +110,13 @@ main {
   border: none;
   border-radius: 12px;
   box-shadow: 0px 4px 12px 6px rgba(0, 0, 0, 0.25);
-  transition: background-color .1s ease-in, color .08s ease-in;
+  transition: background-color 0.1s ease-in, color 0.08s ease-in;
+  font-family: 'Inter', sans-serif;
 }
 
-
-.form-button:hover{
+.form-button:hover {
   color: white;
-  background-color: #26BFEF;
+  background-color: #26bfef;
 }
 
 .input-inside-name {
@@ -131,7 +132,7 @@ main {
 
 .focus-input-js {
   font-size: 12px;
-  transition: all ease-in-out .1s;
+  transition: all ease-in-out 0.1s;
 }
 
 form i {
