@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
@@ -21,30 +25,39 @@
         <div class="form-title">
           <h2>Sign up with your email</h2>
           <p>
-            Alredy have an account? <span class="highlight-p">Sign in</span>
+            Alredy have an account?
+            <span class="highlight-p"><a href="/">Sign in</a></span>
           </p>
         </div>
         <form action="/" method="post" class="form-data">
           <div class="label-form">
-            <input type="text" class="input-form validate" id="name">
-            <!-- <p class="input-inside-name">teste</p> -->
+            <input type="text" class="input-form validate" id="name" />
+            <label class="input-inside-name" for="name">Name</label>
           </div>
           <div class="label-form">
-            <input type="text" class="input-form validate" id="CPF">
+            <input type="text" class="input-form validate" id="cpf" />
+            <label class="input-inside-name" for="cpf">CPF</label>
           </div>
           <div class="label-form">
-            <input type="text" class="input-form validate" id="name">
+            <input type="text" class="input-form validate" id="email" />
+            <label class="input-inside-name" for="email">E-mail</label>
           </div>
           <div class="label-form">
-            <input type="text" class="input-form validate" id="name">
+            <input type="password" class="input-form validate" id="password" />
+            <label class="input-inside-name" for="password" id="passid">Password</label>
+            <i class="bi bi-eye" id="toggle"></i>
           </div>
           <div class="label-form">
-            <input type="text" class="input-form validate" id="name">
+            <input type="text" class="input-form validate" id="passconf" />
+            <label class="input-inside-name" for="passconf"
+              >Confirm Password</label
+            >
           </div>
+          <button class="form-button">Create Account</button>
         </form>
       </div>
     </main>
-    <script src=""></script>
-    <script src=""></script>
+    <script src="./scripts/style-form.js"></script>
+    <script src="./scripts/validation.js"></script>
   </body>
 </html>
