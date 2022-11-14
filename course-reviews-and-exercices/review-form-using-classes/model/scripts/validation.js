@@ -42,4 +42,4 @@ class ValidateForm {
   }
 }
 
-const validation = new ValidateForm();
+ const validation = new ValidateForm();
